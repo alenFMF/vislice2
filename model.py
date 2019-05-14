@@ -18,8 +18,20 @@ class Igra:
     def pravilne_crke(self):
         return [c for c in self.crke if c in self.geslo]
 
+    def stevilo_napak(self):
+        return len(self.napacne_crke())
+
+    def zmaga(self):
+        return all(c in self.crke for c in self.geslo)
+
+    def poraz(self):
+        return self.stevilo_napak() >= STEVILO_DOVOLJENIH_NAPAK
+
 
 igra = Igra("nekaj")
-igra.crke = ['a', 'l', 'v', 'n', 'x']
+igra.crke = ['a', 'l', 'v', 'n', 'x', 'e', 'k', 'j']
 print(igra.napacne_crke())
 print(igra.pravilne_crke())
+print(igra.stevilo_napak())
+print(igra.zmaga())
+print(igra.poraz())
