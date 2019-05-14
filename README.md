@@ -1,1 +1,1 @@
-# vislice2
+# Projekt vislice s tekstovnim vmesnikom
