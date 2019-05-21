@@ -9,7 +9,7 @@ ZACETEK='S'
 ZMAGA = 'W'
 PORAZ = 'X'
 
-with open('vaja11/vislice2/besede.txt') as f:
+with open('besede.txt') as f:
     bazen_besed = [beseda.strip() for beseda in f.readlines()]
 
 class Igra:
