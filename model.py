@@ -64,7 +64,7 @@ def nova_igra():
     geslo = random.choice(bazen_besed)
     return Igra(geslo) 
 
-nova_igra()        
+# nova_igra()        
 # print(bazen_besed[0])
 # print(bazen_besed[-1])
 
